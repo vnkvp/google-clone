@@ -1,13 +1,16 @@
 import React from 'react'
 import { useStateValue } from '../StateProvider'
+import Response from '../response'
 import useGoogleSearch from '../useGoogleSearch';
 import '../assets/SearchPage.css'
 
 function SearchPage() {
 
     const [{ term }, dispatch] = useStateValue();
-    const { data } = useGoogleSearch(term);
-
+    
+    // API CALL
+    // const { data } = useGoogleSearch(term);
+    const data = Response;
     console.log(data);
 
     return (
