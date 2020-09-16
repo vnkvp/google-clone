@@ -69,14 +69,20 @@ function SearchPage() {
                     </div>
                 </div>
             </div>
-            {//term
-            true && (
-            <div className='searchPageResults'>
-                <p className='searchPageResultCount'>
-                   Aproximadamente {data?.searchInformation.totalResults}{" "}
-                   resultados ({data?.searchInformation.searchTime} segundos) 
+            {true && (
+                <div className='searchPageResults'>
+                    <p className='searchPageResultCount'>
+                        Aproximadamente {data?.searchInformation.formattedTotalResults}{" "}
+                   resultados ({data?.searchInformation.searchTime} segundos)
                 </p>
-            </div>
+                    {data?.items.map(item => (
+                        <div className='searchPageResult'>
+                            <a href={item.link}>{item.displayLink}</a>
+                            <a href={item.link}><h2>{item.title}</h2></a>
+                            <p className='searchPageSnippet'>{item.snippet}</p>
+                        </div>
+                    ))}
+                </div>
             )}
         </div>
     )
