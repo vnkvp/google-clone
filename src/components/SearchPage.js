@@ -58,7 +58,6 @@ function SearchPage() {
                                 <Link to='/more'>More</Link>
                             </div>
                         </div>
-
                         <div className='searchPageOptionsRight'>
                             <div className='searchPageOption'>
                                 <Link to='/settings'>Settings</Link>
@@ -67,13 +66,18 @@ function SearchPage() {
                                 <Link to='/tools'>Tools</Link>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
+            {//term
+            true && (
             <div className='searchPageResults'>
-
+                <p className='searchPageResultCount'>
+                   Aproximadamente {data?.searchInformation.totalResults}{" "}
+                   resultados ({data?.searchInformation.searchTime} segundos) 
+                </p>
             </div>
+            )}
         </div>
     )
 }
