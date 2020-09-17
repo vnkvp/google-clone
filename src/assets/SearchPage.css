@@ -50,3 +50,22 @@
 .searchPageOption a {
     margin-left: 5px;
 }
+
+.searchPageResults {
+    max-width: 650px;
+    margin-left: 240px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.searchPageResults a {
+    text-decoration: none;
+}
+
+.searchPageResults a:hover {
+    text-decoration: underline;
+}
+
+.searchPageResults a h2 {
+    font-weight: 600;
+}

@@ -17,8 +17,8 @@ function SearchPage() {
     const [{ term }, dispatch] = useStateValue();
 
     // API CALL
-    // const { data } = useGoogleSearch(term);
-    const data = Response;
+    const { data } = useGoogleSearch(term);
+    // const data = Response;
     console.log(data);
 
     return (
@@ -77,8 +77,8 @@ function SearchPage() {
                 </p>
                     {data?.items.map(item => (
                         <div className='searchPageResult'>
-                            <a href={item.link}>{item.displayLink}</a>
                             <a href={item.link}><h2>{item.title}</h2></a>
+                            <a href={item.link}>{item.displayLink}</a>
                             <p className='searchPageSnippet'>{item.snippet}</p>
                         </div>
                     ))}
