@@ -19,7 +19,7 @@ function SearchPage() {
     // API CALL
     const { data } = useGoogleSearch(term);
     // const data = Response;
-    console.log(data);
+    // console.log(data);
 
     return (
         <div className='searchPage'>

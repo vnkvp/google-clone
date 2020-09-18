@@ -69,3 +69,30 @@
 .searchPageResults a h2 {
     font-weight: 600;
 }
+
+.searchPageSnippet {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .searchPageHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 525px;
+    }
+    .searchPageOption {
+        margin-right: 1vw;
+        font-size: 12px;
+    }
+    .searchPageOptionsRight {
+        margin-left: 1vw;
+    }
+    .searchPageHeaderBody {
+        max-width: 500px;
+    }
+    .searchPageResults {
+        margin: 5vh 0 50vh 5vw;
+        width: 475px;
+    }
+}
