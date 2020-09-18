@@ -9,8 +9,8 @@ import LocalOfferIcon from '@material-ui/icons/LocalOffer'
 import RoomIcon from '@material-ui/icons/Room'
 import MoreVertIcon from '@material-ui/icons/MoreVert'
 import useGoogleSearch from '../useGoogleSearch'
-import '../assets/SearchPage.css'
 import Response from '../response'
+import '../assets/SearchPage.css'
 
 function SearchPage() {
 
