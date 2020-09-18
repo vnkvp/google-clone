@@ -17,8 +17,8 @@ function SearchPage() {
     const [{ term }, dispatch] = useStateValue();
 
     // API CALL
-    const { data } = useGoogleSearch(term);
-    // const data = Response;
+    // const { data } = useGoogleSearch(term);
+     const data = Response;
     // console.log(data);
 
     return (
@@ -69,7 +69,7 @@ function SearchPage() {
                     </div>
                 </div>
             </div>
-            {true && (
+            {term && (
                 <div className='searchPageResults'>
                     <p className='searchPageResultCount'>
                         Aproximadamente {data?.searchInformation.formattedTotalResults}{" "}
