@@ -17,8 +17,9 @@ function SearchPage() {
     const [{ term }, dispatch] = useStateValue();
 
     // API CALL
-    // const { data } = useGoogleSearch(term);
-     const data = Response;
+    const { data } = useGoogleSearch(term);
+    // mock API call
+    //const data = Response;
     // console.log(data);
 
     return (
